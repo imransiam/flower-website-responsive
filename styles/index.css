@@ -1,0 +1,262 @@
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+ 
+ 
+ /* shared styles */
+ .display-flex{
+  display: flex;
+  justify-content: space-between;
+ }
+ .light-gray{
+  color: rgba(0, 0, 0, 0.5);
+ }
+ section {
+  margin-bottom: 100px;
+ }
+ .menu img {
+  width: 22px;
+  
+ }
+ nav ul{
+  list-style: none;
+
+ }
+  .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: #000;
+  }
+   ul .about a, ul .shop a {
+  color:#8987A1;
+   }
+   ul .home a {
+    color: #252432;
+    font-weight:bold;
+   }
+   header, main {
+    max-width: 1140px;
+    margin: 0 auto;
+   }
+   .banner-title {
+    font-size: 4rem ;
+
+   }
+   .fresh,.flowers {
+    color: #E95A08;
+   }
+   /* plant related styles */
+   .plant-title{
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom:0px;
+   }
+   .our {
+    color: #E95A08;
+   }
+   .plant-subtitle {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    text-align: center;
+   }
+   .plant-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   }
+   .card-name  {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+   }
+   .card-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+   }
+   .card-btn {
+    padding: 19px 80px;
+    width: 270px;
+    background-color: #E95A08;
+    border: none;
+    color: white;
+   }
+   .plant-card{
+    text-align: center;
+    margin-bottom: 30px;
+   }
+   /* lover related styles */
+   .lover {
+    margin-top:210px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+   }
+   .badge {
+    width: 286px;
+    /* margin-bottom:450px;
+    margin-left: -150px; */
+    position: relative;
+    bottom: 750px ;
+    right: -360px;
+    
+
+   }
+   .lover-title {
+    font-size: 3.1rem;
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 20px;
+   }
+   .lover-list{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+    margin-top: 0px;
+
+   }
+   /* latest related styles */
+   .latest{
+    margin-top: 0px;
+    padding-top: 0px;
+   }
+   .latest-title {
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: bold;
+
+   }
+   .span-latest{
+    color: #E95A08;
+   }
+    .latest-subtitle{
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    #bloom {
+  grid-area: bloom;
+  background-image:url(../assets/deal-bloom.png);
+  height: 100%;
+  width: 100%;
+}
+
+#ana {
+  grid-area: ana;
+  background-image: url(../assets/deal-ana.png);
+  height: auto;
+  width: auto;
+}
+
+#zabo {
+  grid-area: zabo;
+  background-image: url(../assets/deal-zabo.png);
+  height: 100%; 
+  width: 100%;
+  
+}
+.latest-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+  "bloom zabo zabo"
+  "ana   zabo zabo";
+}
+.content {
+ position: relative;
+ background-size: cover;
+ 
+  
+  border-radius: 30px;
+ 
+}
+
+
+.bloom-title,.ana-title{
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-top: 0%;
+
+}
+.zabo-title {
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-top: 20%;
+}
+.content-list li{
+  list-style: none;
+  text-align: center;
+  padding-right: 20px;
+}
+.content-list li a{
+  text-align: center;
+  
+ color: white;
+
+
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0px;
+}
+    
+    /* media query */
+    @media screen and (max-width:576px) {
+      ul .about a, ul .shop a {
+      display: none;
+   }
+   ul .home a {
+      display: none;
+   }
+      .banner {
+        flex-direction: column-reverse;
+        align-items: center;
+
+      }
+      .banner img {
+        width: 100%;
+        height: auto;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      .plant-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        
+
+    }
+    .badge{
+      display: none;
+
+    }
+    .lover {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    }
