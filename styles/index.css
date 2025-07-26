@@ -388,7 +388,7 @@
       }
       .plant-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
         gap:20px;
         
 
@@ -399,6 +399,13 @@
     }
     .lover {
       grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      margin: 0 auto;
+    }
+    .lover img {
+      width: 100%;
+      height: auto;
+      
     }
     .latest-container {
   display: grid;
@@ -409,7 +416,7 @@
   "bloom"
   "ana"
   "zabo";
-  width: 540px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   text-align: center;
@@ -417,7 +424,7 @@
     .content img {
  position: relative;
  background-size: cover;
- width: 1000px;
+ width: 100%;
  background-position: center;
   height: 900px;
  
@@ -447,7 +454,7 @@
   
   
   height: 300px;
-  width: 540px;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
