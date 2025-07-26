@@ -207,7 +207,7 @@
   color: white;
   font-size: 1.1rem;
   font-weight: bolder;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 .content-list li{
   list-style: none;
@@ -259,4 +259,33 @@
     .lover {
       grid-template-columns: repeat(1, 1fr);
     }
+    .latest-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+  gap: 20px;
+  grid-template-areas: 
+  "bloom"
+  "ana"
+  "zabo";
+  width: 540px;
+  height: auto;
+  margin: 0 auto;
     }
+    .content img {
+ position: relative;
+ background-size: cover;
+ width: 1000px;
+ background-position: center;
+  height: 900px;
+ 
+  
+  border-radius: 30px;
+ 
+}
+.latest-container img {
+  width: 540px;
+  height: auto;
+  border-radius: 30px;
+}
+  }
